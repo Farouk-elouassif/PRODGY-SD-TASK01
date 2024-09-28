@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxvBI5xwHu2snLVJ-MbqxFKA_bvwWsRV6rQQ&s">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Temp Converter</title>
+</head>
+<body class="bg-blue-500 flex justify-center items-center min-h-screen">
+  <div id="container" class="bg-white p-4 rounded-md shadow-md flex justify-center items-center w-1/2 min-w-1/3 flex-col flex-wrap">
+    <h1 class="font-semibold"><i class="fa-solid fa-temperature-three-quarters text-red-500 mr-2"></i>Temperature Converter</h1>
+    
+    <form class="mt-4 flex flex-row justify-center flex-wrap">
+      <label class="mr-4">Please enter temperature:</label>
+      <input type="number" class="border-2 border-black rounded-md w-1/4" id="temperature" placeholder="Enter value">
+      
+      <select id="scales" class="p-1 border-white border-2 rounded-md ml-4">
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Celsius">Celsius</option>
+        <option value="Kelvin">Kelvin</option>
+      </select>
+      
+      <button class="bg-blue-500 p-1 rounded-md ml-4 hover:bg-blue-600 text-white" id="submit">Calculate</button>
+    </form>
+    
+    <p id="result" class="mt-5"></p>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
